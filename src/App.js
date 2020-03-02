@@ -17,7 +17,6 @@ class App extends Component {
     return (
       <div className="App">
         <Container />
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
       </div>
     );
   }
