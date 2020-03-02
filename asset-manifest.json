@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MatyD356.github.io/quote/static/css/main.d1b05096.chunk.css",
+    "main.js": "/MatyD356.github.io/quote/static/js/main.4d34d2e1.chunk.js",
+    "main.js.map": "/MatyD356.github.io/quote/static/js/main.4d34d2e1.chunk.js.map",
+    "runtime-main.js": "/MatyD356.github.io/quote/static/js/runtime-main.9e4ba9ee.js",
+    "runtime-main.js.map": "/MatyD356.github.io/quote/static/js/runtime-main.9e4ba9ee.js.map",
+    "static/js/2.6dd5f473.chunk.js": "/MatyD356.github.io/quote/static/js/2.6dd5f473.chunk.js",
+    "static/js/2.6dd5f473.chunk.js.map": "/MatyD356.github.io/quote/static/js/2.6dd5f473.chunk.js.map",
+    "index.html": "/MatyD356.github.io/quote/index.html",
+    "precache-manifest.659bbb44091af0c871d8308d7dd0e86a.js": "/MatyD356.github.io/quote/precache-manifest.659bbb44091af0c871d8308d7dd0e86a.js",
+    "service-worker.js": "/MatyD356.github.io/quote/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/MatyD356.github.io/quote/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.6dd5f473.chunk.js.LICENSE.txt": "/MatyD356.github.io/quote/static/js/2.6dd5f473.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/MatyD356.github.io/quote/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e4ba9ee.js",
+    "static/js/2.6dd5f473.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.4d34d2e1.chunk.js"
+  ]
+}
