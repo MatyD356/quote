@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 class Container extends React.Component {
     constructor(props) {
@@ -29,12 +31,14 @@ class Container extends React.Component {
     render() {
         return (
             <div id="quote-box" className="Container">
-                <div className="text-container" id="text">{this.state.quote}</div>
-                <div className='author-container' id="author">{this.state.author}</div>
+                <div className="upper-line">
+                    <div className="text-container" id="text">{this.state.quote}</div>
+                    <div className='author-container' id="author">-{this.state.author}</div>
+                </div>
                 <div className="down-line">
-                    <a className="tweet-link" target="_blank" rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${this.state.quote}" ${this.state.author}`} id='tweet-quote'>
-                    Tweet quote</a>
                     <button className='quote-btn' id="new-quote" onClick={this.handleClick}>New quote</button>
+                    <a className="tweet-link" target="_blank" rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${this.state.quote}"${this.state.author}`} id='tweet-quote'>
+                        <FontAwesomeIcon icon={faTwitter} /> </a>
                 </div>
             </div>
         )

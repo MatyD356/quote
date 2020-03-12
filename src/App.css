@@ -1,4 +1,14 @@
-.App,.Container,.text-container,.author-container{
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App,
+.Container,
+.text-container,
+.author-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,50 +16,87 @@
 }
 
 .App {
+  min-height: 100vh;
   text-align: center;
   background-color: #282c34;
-  min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: #282c34;
 }
 
-.Container{
+.Container {
+  min-height: 70vh;
+  width: 75%;
+  margin: 2rem;
   background-color: #61dafb;
-  width: 50vw;
-  height: 50vh;
   border-radius: 5vh;
 }
-.text-container{
-  height: 20vh;
-  width: 85%;
+.upper-line {
+  padding: 1rem 4rem;
+  width: 90%;
+  margin-bottom: 4rem;
 }
-.author-container{
-  width: 85%;
-  height: 5vh;
-  font-weight: 500;
-  margin: 2rem;
+.text-container {
+  min-height: 25rem;
+  font-size: 3rem;
+  font-family: "Indie Flower", cursive;
 }
-.down-line{
+.author-container {
+  font-size: 3rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+}
+.down-line {
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 85%;
+  padding-bottom: 4rem;
 }
-.quote-btn{
+.quote-btn {
+  font-family: "Indie Flower", cursive;
   cursor: pointer;
-  margin: 0 2rem 0 0;
   font-weight: 900;
   font-size: 2rem;
   border-radius: 5vh;
   border: none;
   padding: 1rem 2rem;
-  color: #61dafb;
-  background-color: #282c34;
+  background-color: #61dafb;
+  border: 0.5rem solid #282c34;
+  transition-duration: 200ms;
 }
-.tweet-link{
-  border-bottom: 2px dashed black;
+.quote-btn:hover {
+  background-color: #282c34;
+  color: #61dafb;
+}
+.tweet-link {
+  padding: 1rem;
+  font-size: 3rem;
   color: #282c34;
   font-weight: 900;
   text-decoration: none;
-  margin: 0 0 0 2rem;
+  transition-duration: 200ms;
+  border: 0.5rem solid #282c34;
+  border-radius: 25px;
+}
+.tweet-link:hover {
+  color: white;
+}
+@media (max-width: 400px) {
+  :root {
+    font-size: 10px;
+  }
+  .down-line {
+    flex-direction: column;
+  }
+  .text-container {
+    margin: 2rem;
+  }
+  .upper-line {
+    margin-bottom: 2rem;
+  }
+  .quote-btn {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 3rem;
+  }
 }
